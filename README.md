@@ -1,6 +1,6 @@
 # Prompt Descent Optimization Pipeline
 
-An automated prompt optimization pipeline inspired by gradient descent. This project refines System Prompts iteratively for Large Language Models (LLMs) to maximize accuracy when extracting structured data from PDF documents. It evaluates the outputs against individual Ground Truth JSON files and optimizes prompts based on detailed feedback and error scores.
+An automated prompt optimization pipeline inspired by gradient descent. This project refines a **single** global System Prompt iteratively across a batch of multiple PDF documents to find the best prompt that satisfies all documents simultaneously. It evaluates the outputs of all documents in each iteration against their individual Ground Truth JSON files, computing an average error score and combining feedback to guide the prompt optimizer.
 
 ---
 
@@ -34,13 +34,17 @@ prompt-descent/
 
 ## ⚙️ How it Works (Prompt Optimization Loop)
 
-For each PDF document in the list:
-1. **Initial Seed**: Starts with a default extraction prompt.
-2. **Extraction (Rule Extractor)**: Extracts structured rules (`ExtractedRules`) from the PDF.
-3. **Evaluation (Evaluator)**: Evaluates the extracted data against the corresponding Ground Truth JSON file, outputting an error score (`0.0` to `1.0`) and qualitative feedback on misses or hallucinations.
-4. **Convergence Check**: Stops if the error score meets the threshold configured in `settings.optimization_threshold`.
-5. **Optimization (Gradient Step)**: Feeds the current prompt, error score, and feedback into a Prompt Expert Optimizer which generates an updated, improved prompt.
-6. **Iteration**: Repeats up to `max_iterations` times.
+For each iteration (up to `max_iterations`):
+1. **Initial Seed**: Starts with a single default extraction prompt.
+2. **Batch Extraction & Evaluation**: For every PDF document:
+   - Extracts structured rules (`ExtractedRules`) using the *current* system prompt.
+   - Evaluates the extracted rules against the matching Ground Truth JSON file to produce an individual error score (`0.0` to `1.0`) and qualitative feedback.
+3. **Metrics Aggregation**:
+   - Calculates the **average error score** across all PDFs.
+   - Combines feedback from all documents where errors were found.
+4. **Convergence Check**: Stops if the average error score meets the threshold configured in `settings.optimization_threshold`.
+5. **Optimization (Gradient Step)**: Feeds the current system prompt, the average error score, and the combined feedback to the Prompt Expert Optimizer, which generates an updated, improved prompt.
+6. **Iteration**: Repeats with the new prompt.
 
 ---
 
@@ -104,8 +108,8 @@ pip install -r requirements.txt
 
 To optimize prompts for your PDFs, organize your files as follows:
 
-1. **PDFs Folder**: A folder containing your PDF files (e.g. `documents/sample_rules.pdf`).
-2. **Ground Truth Folder**: A folder containing `.json` files. The filename must match the PDF name (e.g. `data/ground_truths/sample_rules.json`).
+1. **PDFs Folder**: A folder containing your PDF files (e.g. `documents/rules_1.pdf`, `documents/rules_2.pdf`).
+2. **Ground Truth Folder**: A folder containing `.json` files. The filename must match the PDF name (e.g. `data/ground_truths/rules_1.json`, `data/ground_truths/rules_2.json`).
 
 The JSON ground truth files must follow the extraction structure:
 ```json
@@ -143,14 +147,13 @@ agent = OpenAIAgent()
 loader = DataLoaderService()
 
 # Run the optimization loop
-optimal_prompts = run_prompt_gradient_descent(
+optimal_prompt = run_prompt_gradient_descent(
     agent=agent,
     loader=loader,
     pdf_paths=["documents/rules_1.pdf", "documents/rules_2.pdf"],
     ground_truth_dir="data/ground_truths"
 )
 
-# Print optimal prompts found for each document
-for pdf_path, prompt in optimal_prompts.items():
-    print(f"Optimal prompt for {pdf_path}: {prompt}")
+# Print the single global optimal prompt found
+print(f"Optimal global prompt: {optimal_prompt}")
 ```
