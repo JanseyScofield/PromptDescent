@@ -10,6 +10,17 @@ class AppSettings(BaseSettings):
     optimization_threshold: float = 0.05
     max_iterations: int = 5
     
+    # New settings for batch processing and ID-based matching
+    validation_json_path: str = "data/ground_truth.json"
+    pdfs_directory: str = "documents"
+    batch_size: int = 5
+    history_file_path: str = "data/prompt_history.json"
+    
+    # AI Models
+    extraction_model: str = "gpt-4o-mini"
+    evaluation_model: str = "gpt-4o"
+    max_document_length: int = 15000
+    
     # model_config tells Pydantic to look for a .env file
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 

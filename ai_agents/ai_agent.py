@@ -1,20 +1,20 @@
 from abc import ABC, abstractmethod
-from typing import Dict
+from typing import Dict, Optional
 from models.extracted_rules import ExtractedRules
 from models.evaluation_results import EvaluationResult
 
 class AIAgent(ABC):
     @abstractmethod
-    def extract_rules(self, document_text: str, current_prompt: str) -> ExtractedRules:
+    def extract_rules(self, document_text: str, current_prompt: str) -> Optional[ExtractedRules]:
         """
         Extract rules from the document text based on the current prompt.
         """
         pass
 
     @abstractmethod
-    def evaluate_extraction(self, ai_answers: ExtractedRules, ground_truth: Dict) -> EvaluationResult:
+    def evaluate_extraction(self, ai_answers: ExtractedRules, ground_truth: Dict, document_text: str) -> Optional[EvaluationResult]:
         """
-        Evaluate the extracted rules against the ground truth.
+        Evaluate the extracted rules against the ground truth, using the original document context.
         """
         pass
 
