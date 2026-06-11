@@ -80,13 +80,13 @@ def run_prompt_gradient_descent(agent: AIAgent, loader: DataLoaderService, enabl
                 
                 # Step 3: Extract and Validate (with PDF context)
                 log(f"Running Extraction for ID [{file_id}]...")
-                extracted_rules = agent.extract_rules(document_text, current_prompt)
+                extracted_rules = agent.extract_rules(document_text, current_prompt, unload_model=True)
                 if not extracted_rules:
                     log(f"Skipping {pdf_filename}: Extraction API failed.")
                     continue
                 
                 log(f"Running Evaluation for ID [{file_id}]...")
-                evaluation = agent.evaluate_extraction(extracted_rules, gt, document_text)
+                evaluation = agent.evaluate_extraction(extracted_rules, gt, document_text, unload_model=True)
                 if not evaluation:
                     log(f"Skipping {pdf_filename}: Evaluation API failed.")
                     continue
@@ -141,7 +141,7 @@ def run_prompt_gradient_descent(agent: AIAgent, loader: DataLoaderService, enabl
             feedback=combined_feedback
         )
         
-        current_prompt = agent.optimize_prompt(current_prompt, aggregated_evaluation)
+        current_prompt = agent.optimize_prompt(current_prompt, aggregated_evaluation, unload_model=True)
         log(f"New Prompt: {current_prompt}")
         
     return best_prompt + f"\n\nFinal error score achieved: {best_score:.4f}"

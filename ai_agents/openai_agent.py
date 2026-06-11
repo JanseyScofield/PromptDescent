@@ -13,7 +13,7 @@ class OpenAIAgent(AIAgent):
         self.extraction_model = settings.openai_extraction_model
         self.evaluation_model = settings.openai_evaluation_model
 
-    def extract_rules(self, document_text: str, current_prompt: str) -> Optional[ExtractedRules]:
+    def extract_rules(self, document_text: str, current_prompt: str, unload_model: bool = False) -> Optional[ExtractedRules]:
         try:
             response = self.client.beta.chat.completions.parse(
                 model=self.extraction_model,
@@ -29,7 +29,7 @@ class OpenAIAgent(AIAgent):
             print(f"Error during API extraction: {e}")
             return None
 
-    def evaluate_extraction(self, ai_answers: ExtractedRules, ground_truth: Dict, document_text: str) -> Optional[EvaluationResult]:
+    def evaluate_extraction(self, ai_answers: ExtractedRules, ground_truth: Dict, document_text: str, unload_model: bool = False) -> Optional[EvaluationResult]:
         system_prompt = """
         You are an expert evaluator. Compare the AI's extracted rules with the Ground Truth.
         You also have access to the ORIGINAL DOCUMENT TEXT to understand WHY the AI succeeded or failed.
@@ -69,7 +69,7 @@ class OpenAIAgent(AIAgent):
             "exactly what documents and pieces of information are required for the process to begin."
         )
 
-    def optimize_prompt(self, current_prompt: str, evaluation: EvaluationResult) -> str:
+    def optimize_prompt(self, current_prompt: str, evaluation: EvaluationResult, unload_model: bool = False) -> str:
         system_prompt = """
         You are a Prompt Engineering Expert. Your goal is to improve an extraction prompt.
         You will be given the current prompt, its error score, and feedback on why it failed.

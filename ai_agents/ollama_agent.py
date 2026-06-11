@@ -13,15 +13,19 @@ class OllamaAgent(AIAgent):
         self.extraction_model = settings.ollama_extraction_model
         self.evaluation_model = settings.ollama_evaluation_model
 
-    def _generate_structured_output(self, model: str, system_prompt: str, user_content: str, response_schema: Type) -> Optional[Any]:
+    def _generate_structured_output(self, model: str, system_prompt: str, user_content: str, response_schema: Type, unload_model: bool = False) -> Optional[Any]:
         try:
+            # keep_alive=0 unloads the model immediately after the request
+            keep_alive = 0 if unload_model else None
+            
             response = self.client.chat(
                 model=model,
                 messages=[
                     {'role': 'system', 'content': system_prompt},
                     {'role': 'user', 'content': user_content},
                 ],
-                format=response_schema.model_json_schema()
+                format=response_schema.model_json_schema(),
+                keep_alive=keep_alive
             )
             # The ollama client returns a ChatResponse, text is in ['message']['content']
             return response_schema.model_validate_json(response['message']['content'])
@@ -29,16 +33,17 @@ class OllamaAgent(AIAgent):
             print(f"Error during Ollama API call: {e}")
             return None
 
-    def extract_rules(self, document_text: str, current_prompt: str) -> Optional[ExtractedRules]:
+    def extract_rules(self, document_text: str, current_prompt: str, unload_model: bool = False) -> Optional[ExtractedRules]:
         user_content = f"Extract rules from:\n\n{document_text[:settings.max_document_length]}"
         return self._generate_structured_output(
             self.extraction_model,
             current_prompt,
             user_content,
-            ExtractedRules
+            ExtractedRules,
+            unload_model=unload_model
         )
 
-    def evaluate_extraction(self, ai_answers: ExtractedRules, ground_truth: Dict, document_text: str) -> Optional[EvaluationResult]:
+    def evaluate_extraction(self, ai_answers: ExtractedRules, ground_truth: Dict, document_text: str, unload_model: bool = False) -> Optional[EvaluationResult]:
         system_prompt = """
         You are an expert evaluator. Compare the AI's extracted rules with the Ground Truth.
         You also have access to the ORIGINAL DOCUMENT TEXT to understand WHY the AI succeeded or failed.
@@ -60,7 +65,8 @@ class OllamaAgent(AIAgent):
             self.evaluation_model,
             system_prompt,
             user_content,
-            EvaluationResult
+            EvaluationResult,
+            unload_model=unload_model
         )
 
     def generate_initial_prompt(self) -> str:
@@ -69,7 +75,7 @@ class OllamaAgent(AIAgent):
             "exactly what documents and pieces of information are required for the process to begin."
         )
 
-    def optimize_prompt(self, current_prompt: str, evaluation: EvaluationResult) -> str:
+    def optimize_prompt(self, current_prompt: str, evaluation: EvaluationResult, unload_model: bool = False) -> str:
         system_prompt = """
         You are a Prompt Engineering Expert. Your goal is to improve an extraction prompt.
         You will be given the current prompt, its error score, and feedback on why it failed.
@@ -81,6 +87,7 @@ class OllamaAgent(AIAgent):
             self.evaluation_model,
             system_prompt,
             user_content,
-            PromptUpdate
+            PromptUpdate,
+            unload_model=unload_model
         )
         return result.new_prompt if result else current_prompt
