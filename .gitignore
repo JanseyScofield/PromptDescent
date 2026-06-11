@@ -3,3 +3,5 @@
 __pycache__/
 *.py[cod]
 *$py.class
+/data/documents
+data/prompt_history.json

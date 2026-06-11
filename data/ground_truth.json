@@ -1,0 +1,867 @@
+[
+  {
+    "id": 1,
+    "pdf": "01_documento_orientador_emissao_de_diploma-ensino_medio-ifba",
+    "documents_needed": [
+      "Certidão de nascimento ou casamento",
+      "RG e CPF",
+      "Comprovante de quitação com a justiça eleitoral",
+      "Comprovante de quitação com alistamento militar",
+      "Histórico do curso concluído",
+      "Histórico de conclusão do ensino fundamental",
+      "Histórico de conclusão do ensino médio (para o subsequente)"
+    ],
+    "information_needed": [
+      "Preenchimento do formulário de requerimento"
+    ]
+  },
+  {
+    "id": 2,
+    "pdf": "02_Edital_n_C2_BA_13_2024_Estagio_versao_final_assina_240905_230648",
+    "documents_needed": [],
+    "information_needed": [
+      "Comprovação de matrícula regular e frequência efetiva em instituição de ensino superior (IES) reconhecida pelo MEC (nos cursos listados no Anexo 1)",
+      "Visto de permanência no país (para estudantes estrangeiros)",
+      "Comprovação de regularidade com obrigações eleitorais (maiores de 18 anos)",
+      "Comprovação de regularidade com obrigações militares (sexo masculino, maiores de 18 anos)",
+      "Comprovação de que não realizou estágio por período igual ou superior a dois anos na Administração Pública federal",
+      "Idade mínima de 16 anos completos na data de início do estágio",
+      "Disponibilidade de 4h/dia (20h/semana) para cumprir o estágio"
+    ]
+  },
+  {
+    "id": 3,
+    "pdf": "Vagas Residuais 2026",
+    "documents_needed": [
+      "Histórico Escolar do Curso assinado pela instituição de origem (com carga horária, créditos, conceitos e coeficiente de rendimento)",
+      "Diploma (frente e verso), certificado de conclusão ou declaração de colação de grau (para Portador de Diploma)",
+      "Tradução oficial para o português (se documento estrangeiro)",
+      "Comprovante de aprovação em exame de seleção pública da IES (para Transferência Externa)",
+      "Declaração da instituição de origem de situação regular de matrícula (para Transferência Externa)",
+      "Comprovação legal que regulamenta o curso de origem (para Transferência Externa)",
+      "Documento de identificação OFICIAL com foto e CPF",
+      "Certidão expedida pela instituição informando o coeficiente de rendimento (se não constar no histórico)",
+      "Ficha de Matrícula preenchida (Anexo VI)",
+      "Certidão de Nascimento ou Casamento",
+      "Quitação com a Justiça Eleitoral e com Serviço Militar",
+      "Certificado de Conclusão e Histórico Escolar do Ensino Médio",
+      "Comprovação de vacinação antitetânica",
+      "Uma foto 3x4",
+      "Formulário de Solicitação para Aproveitamento de Estudos (Anexo IV)",
+      "Cópia das ementas e programas das disciplinas cursadas com aprovação"
+    ],
+    "information_needed": [
+      "Preenchimento de formulário eletrônico de inscrição",
+      "Coeficiente de rendimento exigido (TI >= 5.0; TE >= 6.0; PD >= 6.0)",
+      "Ter cumprido carga horária mínima de 35% ou mínimo de 3 semestres concluídos (para TI e TE)",
+      "Ter carga horária cursada de no máximo 50% (para Transferência Externa)"
+    ]
+  },
+  {
+    "id": 4,
+    "pdf": "Edital de Programas universais",
+    "documents_needed": [],
+    "information_needed": [
+      "Definir no prompt o objetivo da extração: inscrição de projeto, participação de orientador ou inscrição de aluno como bolsista (Nota: O conteúdo original continha apenas o comentário de dúvida do revisor)."
+    ]
+  },
+  {
+    "id": 5,
+    "pdf": "05_SEI_4576208_Edital_24_2025.2",
+    "documents_needed": [
+      "Folha resumo do Cadastro Único (CadÚnico) atualizado",
+      "Declaração de Benefício do INSS (para BPC/LOAS)",
+      "CPF, RG ou Certidão de Nascimento de todos os membros da família",
+      "Comprovante de matrícula dos membros da família que estudam (e carnê/recibo se em instituição particular)",
+      "Declaração da instituição de ensino ou contrato de bolsista",
+      "Contracheques dos 3 últimos meses e CNIS (para trabalho formal)",
+      "Declaração de IRPF, Declaração do Simples Nacional (DASN-SIMEI), Pró-labore ou IRPJ (para autônomos e empresários)",
+      "Declaração de trabalho informal e CNIS (trabalho informal)",
+      "Declaração de situação de desemprego, Carteira de Trabalho Digital e Extrato CNIS (para desempregados)",
+      "Comprovantes de recebimento de estágio, bolsas, pensão ou aposentadoria",
+      "Declaração de Imposto de Renda (membros maiores de 18 anos)",
+      "Comprovantes das despesas familiares dos 3 últimos meses (água, energia, aluguel, internet, condomínio, medicamentos, etc.)",
+      "Declaração do cedente, comprovante de residência e RG do cedente (se residir em imóvel cedido)",
+      "Foto do cartão bancário ou comprovante com dados bancários (conta no nome do estudante)",
+      "Certidão de óbito ou averbação de divórcio/separação (se aplicável)"
+    ],
+    "information_needed": [
+      "Comprovação de matrícula regular no semestre letivo de 2025.2",
+      "Comprovação de possuir renda mensal per capita familiar igual ou inferior a um salário-mínimo vigente (R$ 1.518,00)",
+      "Preenchimento do formulário de inscrição",
+      "Informar dados bancários (banco, agência e conta) via SUAP"
+    ]
+  },
+  {
+    "id": 6,
+    "pdf": "06_copy2_of_SEI_4746809_Edital_041",
+    "documents_needed": [
+      "Documento de Identificação original com foto (RG, CIN, CNH, CTPS ou Carteira Profissional)",
+      "Cédula de identidade expedida pela Polícia Federal ou passaporte com visto temporário (para estrangeiros)",
+      "Cadastro de Pessoa Física (CPF)",
+      "01 foto 3x4 recente (colorida, fundo chapado, rosto centralizado, em PDF, máx. 750 kB)",
+      "Documento que comprove a quitação com o Serviço Militar (CAM, Certificado de Reservista, CDI, CI, ou atestado da Junta Militar com número do RA)",
+      "Certidão de Quitação Eleitoral atual (emitida pelo TSE)",
+      "Certificado de Conclusão do Ensino Médio e Histórico Escolar (ou equivalente)",
+      "Declaração de provável concluinte emitida pela IES (excepcionalmente, a ser substituída pelo certificado)",
+      "Equivalência de Estudos emitido pela Secretaria de Educação (para conclusão do Ensino Médio no exterior)",
+      "Diploma de graduação revalidado e histórico escolar com tradução oficial (para Ensino Superior no exterior)",
+      "Certificado de Conclusão do ENCCEJA ou exames de certificação de jovens e adultos",
+      "Comprovante de vacinação antitetânica"
+    ],
+    "information_needed": [
+      "Ter mais de 18 anos completos na data de realização do exame (para certificação pelo ENCCEJA ou similar)",
+      "Assegurar que os documentos de escolaridade possuam autorização, reconhecimento e assinaturas adequadas conforme especificações"
+    ]
+  },
+  {
+    "id": 7,
+    "pdf": "Resolução nº06/2014/CONSUP/IFBA (Normas para revalidação de diplomas)",
+    "documents_needed": [
+      "Requerimento protocolado ou encaminhado por carta registrada",
+      "Tradução juramentada para Língua Portuguesa dos conteúdos programáticos e documentos",
+      "Cópia da cédula de identidade (com original) para brasileiro ou naturalizado",
+      "Cópia da identidade e visto permanente expedido pela PF, ou passaporte com visto permanente consular (com originais) para estrangeiro",
+      "Cópia do comprovante de quitação com o serviço militar (com original) para brasileiros entre 18 e 45 anos",
+      "Cópia do comprovante de quitação com o serviço eleitoral (com original) para brasileiros e naturalizados",
+      "Cópia do diploma e Histórico Escolar a revalidar (com originais e visto consular brasileiro)",
+      "Cópia do currículo do curso com conteúdo programático, carga horária e bibliografia (visado por autoridade consular brasileira)",
+      "Cópia do Certificado de Conclusão do Ensino Médio (com original e visto consular) caso aplicável"
+    ],
+    "information_needed": [
+      "O processo de revalidação será aberto em prazo estipulado por edital publicado semestralmente",
+      "Aprovação em exames e provas em Língua Portuguesa (em caso de correspondência parcial)",
+      "Cumprimento de Plano de Estudo com prazo definido (em caso de correspondência parcial)",
+      "Cumprir os requisitos mínimos prescritos para os cursos brasileiros correspondentes"
+    ]
+  },
+  {
+    "id": 8,
+    "pdf": "Resolução nº 25/2016 - Política de Assistência Estudantil",
+    "documents_needed": [],
+    "information_needed": [
+      "O texto extraído forneceu apenas o índice/estrutura do documento (Títulos e Capítulos) e não lista regras acionáveis ou documentos. Uma nova extração detalhada do conteúdo do PDF seria necessária para preencher estes campos de forma útil."
+    ]
+  },
+  {
+    "id": 9,
+    "pdf": "EDITAL Nº 07/2020 Auxílios digitais e emergencial",
+    "documents_needed": [
+      "Certidão comprobatória do CadÚnico com NIS ou extrato atualizado do Bolsa Família/BPC",
+      "Histórico do nível fundamental (para integrado e integrado/EJA) ou do nível médio (para subsequente e superior)",
+      "CNIS do estudante (para maiores de 18 anos dos cursos semestrais)",
+      "Foto da frente do cartão bancário ou comprovante com os dados bancários",
+      "Declaração de veracidade das informações e ciência das determinações do edital (assinada pelo responsável se menor de 18 anos)"
+    ],
+    "information_needed": [
+      "Estar regularmente matriculado no ano letivo de 2020 em cursos presenciais que aderiram ao formato remoto devido à pandemia",
+      "Preenchimento do formulário de inscrição para estudantes pleiteando bolsa e para bolsistas anteriores (Editais 2019.1/2019.2 e emergencial 2020) solicitando renovação ou ampliação",
+      "Providenciar conta bancária caso não possua no momento, a ser feita após o resultado",
+      "Estudantes que já recebem o Auxílio Financeiro Estudantil Emergencial estão dispensados do envio dos documentos"
+    ]
+  },
+  {
+    "id": 10,
+    "pdf": "EDITAL DE APOIO A CONCESSÃO DE DIÁRIAS E PASSAGENS",
+    "documents_needed": [
+      "Formulário SOLICITAÇÃO DE DIÁRIAS E PASSAGENS preenchido e assinado (via processo SEI)",
+      "Trabalho a ser apresentado no evento",
+      "Carta de aprovação do trabalho pela organização do evento ou credencial atestando a seleção do estudante (pode ser entregue posteriormente antes de receber o auxílio)",
+      "Descrição detalhada de gastos",
+      "Declaração de anuência da chefia imediata para participação"
+    ],
+    "information_needed": [
+      "Ser servidor(a) docente ou técnico(a) administrativo(a) efetivo(a) em pleno exercício no IFBA - Campus Salvador",
+      "Não estar em gozo de férias no momento do evento",
+      "Não estar usufruindo de licença ou afastamento no momento do evento",
+      "Não ter a lotação alterada",
+      "Apenas um autor pode ser apoiado por edital no caso de trabalhos feitos por mais de um autor",
+      "Cada servidor só pode ser contemplado uma vez neste Edital"
+    ]
+  },
+  {
+    "id": 11,
+    "pdf": "Edital01_2025_DAP.pdf",
+    "documents_needed": [
+      "Histórico escolar completo do Ensino Médio (1º ao 3º ano)",
+      "Certificado de conclusão do Ensino Médio",
+      "Documento oficial de identificação com foto",
+      "CPF",
+      "Certidão de nascimento ou casamento",
+      "Foto 3x4 atual",
+      "Cartão de vacinação com vacina antitetânica"
+    ],
+    "information_needed": []
+  },
+  {
+    "id": 12,
+    "pdf": "EDITAL Nº 12 / 2018 / DEPAE / IFBA/CAMPUS DE SALVADOR",
+    "documents_needed": [
+      "Cópia do RG e CPF do(s) estudante(s) selecionados",
+      "Comprovante de matrícula e frequência com data atual, emitidos pelo GRA",
+      "Declaração do candidato à bolsa de não possuir vínculo empregatício, estágio ou outra modalidade de bolsa (PIBIC, PIBIC Jr, PIBIT, etc)"
+    ],
+    "information_needed": [
+      "Estar devidamente matriculado e frequentando os cursos regulares do IFBA/Campus de Salvador",
+      "Demonstrar interesse pelas ações que o projeto se propõe",
+      "Ter facilidade para expressar ideias",
+      "Ter capacidade de iniciativa, participação e assiduidade",
+      "Ter disponibilidade para atuar em reuniões, grupos de estudos e atividades pré-estabelecidas pelo orientador",
+      "Informar número de telefone fixo, celular e e-mail atualizados"
+    ]
+  },
+  {
+    "id": 13,
+    "pdf": "edital-no-11-2026-prpgi-ifba",
+    "documents_needed": [
+      "Ficha de inscrição devidamente assinada (Anexo I)",
+      "Diploma ou certificado de conclusão (frente e verso) do curso de graduação ou Declaração de concluinte",
+      "Histórico escolar do curso de graduação",
+      "Currículo Lattes completo, impresso diretamente da Plataforma Lattes",
+      "Documentos comprobatórios dos itens do Currículo Lattes (títulos, experiências, produção acadêmica/técnica) com o número do item indicado no canto superior direito",
+      "Plano de trabalho limitado a 5 páginas, sem capa, fonte Arial 12, espaçamento 1,5, margens 2,5 (Anexo II)"
+    ],
+    "information_needed": [
+      "Gerar um único arquivo em formato PDF com toda a documentação na ordem exigida",
+      "O nome do arquivo único PDF deve ser o nome completo do candidato, sem acentos e sem espaçamento entre caracteres",
+      "Submeter o arquivo por meio do Formulário de Seleção do PPGEM 2026.2",
+      "Estágios não serão considerados para fins de comprovação de experiência profissional"
+    ]
+  },
+  {
+    "id": 14,
+    "pdf": "Edital_02_2026_PROEX_IFBA",
+    "documents_needed": [
+      "Currículo na Plataforma Lattes (atualizado há no máximo 01 ano)",
+      "Termo de Compromisso do proponente preenchido e assinado (via SUAP)",
+      "Declaração de anuência da Chefia Imediata indicando a carga horária destinada à ação",
+      "Declaração de ciência quanto à execução da ação assinada pelo setor de Extensão e pela Direção Geral",
+      "Termo de Compromisso do discente bolsista membro da equipe preenchido e assinado",
+      "Cotações de preços de mercado (3 orçamentos/tomada de preço), notas fiscais e recibos referentes à compras e serviços (para prestação de contas)",
+      "Relatórios de frequência dos bolsistas e voluntários",
+      "Registros fotográficos e relatório analítico (para prestação de contas no SUAP)",
+      "Termo de Doação (modelo disponibilizado via SEI) dos itens adquiridos no final do projeto",
+      "Guia de Recolhimento da União (GRU) em caso de devolução de recursos não utilizados ou desistência"
+    ],
+    "information_needed": [
+      "Propostas devem constituir intervenções para solucionar problemas/demandas sociais de grupos vulneráveis (saúde, geração de renda, educação, sustentabilidade, etc.)",
+      "Propostas devem estar de acordo com as diretrizes da Extensão Tecnológica e Resolução CONSEPE IFBA nº 93/2023",
+      "O proponente não pode estar em afastamento ou licença (qualificação ou outros)",
+      "O proponente deverá preencher corretamente as informações da proposta, do 'Plano de Aplicação' e 'Plano de desembolso' nas abas do SUAP",
+      "É obrigatória a participação de discente do IFBA na equipe executora como bolsista",
+      "O proponente deverá abrir uma conta corrente ou conta digital exclusiva para receber o depósito único do recurso",
+      "Realizar a prestação de contas do recurso recebido incluindo-a no SUAP com todos os documentos comprobatórios",
+      "Devolver valores não utilizados via GRU informando a PROEX através do processo SEI"
+    ]
+  },
+  {
+    "id": 15,
+    "pdf": "Edital nº 05 de 23 de fevereiro de 2026.- PAAE / Campus Salvador",
+    "documents_needed": [
+      "Termo de Validação das Informações e Responsabilidade (Anexo VI) - Exclusivo para estudantes selecionados nos Editais 10 e 24/2025",
+      "Folha Resumo do Cadastro Único (se possuir CadÚnico)",
+      "Comprovante de participação em programas sociais",
+      "Documentos dos membros familiares",
+      "Documentos de renda do estudante e familiares maiores de 18 anos",
+      "Documentos que comprovem todas as despesas familiares",
+      "Foto do cartão bancário em nome do estudante"
+    ],
+    "information_needed": [
+      "Preencher ou atualizar o questionário de “Caracterização Socioeconômica”",
+      "Acessar a aba de inscrição do Edital e clicar em “Fazer inscrição”",
+      "Conferir cadastro familiar e dados bancários do estudante",
+      "Escolher auxílios/bolsas a concorrer e conferir informações sociais, econômicas e de saúde da família",
+      "Emitir o “comprovante de inscrição”",
+      "Procurar o Serviço Social (Sala da CAE) antes de concluir a inscrição em caso de dúvidas, especialmente sobre documentação"
+    ]
+  },
+  {
+    "id": 16,
+    "pdf": "EDITAL Nº 09 DE 09 DE MAIO DE 2025 SELEÇÃO PARA O PROGRAMA DE ASSISTÊNCIA E APOIO AO ESTUDANTE - PAAE",
+    "documents_needed": [
+      "RG e CPF do(a) estudante e de todos os membros do grupo familiar com idade a partir de 18 anos",
+      "Extrato/Folha Resumo do Cadastro Único para Programas Sociais (CadÚnico)",
+      "Extrato atualizado do Programa Bolsa Família ou Auxílio Brasil",
+      "Comprovantes de renda dos membros a partir de 18 anos (Contracheque, Extrato de benefícios, Declaração de trabalho informal/rural, 3 últimos extratos bancários, Declaração de desemprego, IR 2024, ou Extrato de pensão)",
+      "Comprovação de endereço recente (preferencialmente conta de energia elétrica) ou declaração de endereço redigida e assinada pelo responsável",
+      "Dados bancários (foto da frente do cartão ou comprovante com os dados da conta)",
+      "Extrato do Cadastro Nacional de Informações Sociais (CNIS)",
+      "Comprovantes das despesas fixas da residência (água, energia, telefone, internet, aluguel/financiamento, IPTU, condomínio)",
+      "Comprovantes de tratamentos de saúde (relatórios médicos, receituários, aquisição de medicamentos) quando houver"
+    ],
+    "information_needed": [
+      "Preencher formulário de inscrição e caracterização socioeconômica",
+      "Anexar os documentos em formato PDF, JPG ou PNG",
+      "Estudante que reside em imóvel distinto, mas com dependência financeira do grupo familiar, deve apresentar comprovantes de ambos os domicílios",
+      "Estar matriculado e frequentando regularmente (frequência de 75% ou mais) um dos cursos presenciais de Nível Médio ou Superior do campus Santo Amaro"
+    ]
+  },
+  {
+    "id": 17,
+    "pdf": "Resolução CONSEPE/IFBA nº 167/2025 estabelece regras para utilização consciente de celulares e dispositivos digitais nos campi.",
+    "documents_needed": [
+      "Laudo médico (para estudantes com deficiência que precisem usar como ferramenta de acessibilidade)",
+      "Atestado médico (para uso no monitoramento de saúde)"
+    ],
+    "information_needed": [
+      "Uso proibido durante aulas, palestras e atividades pedagógicas (exceto com autorização do professor para fins pedagógicos)",
+      "Uso permitido apenas nos intervalos",
+      "O dispositivo deve ser guardado na mochila ou bolsa (guarda e segurança são responsabilidade do estudante)",
+      "Não se aplica aos cursos subsequentes e EJA",
+      "O descumprimento sujeita a advertência oral/escrita, atividade pedagógica e suspensão"
+    ]
+  },
+  {
+    "id": 18,
+    "pdf": "Res. CONSUP/IFBA nº 173, de 04.10.2025",
+    "documents_needed": [],
+    "information_needed": [
+      "Ser servidor(a) docente ou técnico(a)-administrativo(a) ativo(a) permanente para candidatar-se até o fim das inscrições (08 a 13/08/2025)",
+      "Campanhas devem ser realizadas preferencialmente por meios digitais (lives, sites, mensagens, redes sociais)",
+      "É proibida a propaganda nas redes, sites e e-mails oficiais institucionais para promoção pessoal, sendo permitidos apenas perfis/e-mails pessoais",
+      "Campanhas presenciais precisam respeitar a limpeza e os locais definidos mediante prévia manifestação da Administração",
+      "As visitas a salas e ambientes devem ser agendadas previamente com a chefia responsável e durar no máximo 20 minutos",
+      "O financiamento e a responsabilidade da propaganda são inteiramente dos candidatos e simpatizantes",
+      "Toda propaganda deve mencionar o nome do candidato e estar em língua nacional",
+      "A votação (17 e 18/09/2025) será feita via SUAP de forma direta, facultativa e secreta (sem procuração ou correspondência)"
+    ]
+  },
+  {
+    "id": 19,
+    "pdf": "RESOLUÇÃO CGRC-IFBA Nº 003, DE 19 DE DEZEMBRO DE 2023",
+    "documents_needed": [
+      "Formulário de solicitação apropriada (disponível no site da PRODEP)",
+      "Projeto de estudos com título, objeto, objetivos, justificativa, referencial teórico, metodologia e cronograma",
+      "Documentação oficial de vinculação ao Programa de Pós-Graduação (stricto sensu) ou Pós-Doutorado com o período da atividade",
+      "Documentação de matrícula/inscrição em ação de desenvolvimento (para Licença Capacitação)",
+      "Documentação comprobatória de concessão de bolsa de estudos ou auxílios (quando aplicável)",
+      "Termo de Compromisso e Responsabilidade (disponível no site da PRODEP)",
+      "Manifestação/justificativa da Unidade/Órgão com anuência da Chefia Imediata e do Dirigente",
+      "Cópia dos documentos indicando a aprovação do interessado em seleção interna",
+      "Diploma e relatórios (a serem entregues após o retorno)"
+    ],
+    "information_needed": [
+      "O afastamento exige aprovação em seleção interna e limita-se a 5% dos servidores da unidade",
+      "Tempo mínimo de cargo exigido: 3 anos (Mestrado) e 4 anos (Doutorado e Pós-Doutorado)",
+      "Tempo máximo permitido: Até 24 meses (Mestrado), Até 48 meses (Doutorado) e Até 12 meses (Pós-Doutorado)",
+      "Licença Capacitação permite até 3 meses a cada 5 anos trabalhados (para cursos de pelo menos 30h semanais)",
+      "É obrigatório trabalhar na instituição pelo mesmo tempo em que esteve afastado após o retorno",
+      "A devolução dos recursos aos cofres públicos é obrigatória em caso de desistência, reprovação, demissão ou aposentadoria antes de cumprir o tempo de retorno"
+    ]
+  },
+  {
+    "id": 20,
+    "pdf": "RESOLUÇÃO N° 09/2024",
+    "documents_needed": [],
+    "information_needed": [
+      "O conteúdo original está vazio ou não contém informações (NaN no arquivo). Nenhuma regra pôde ser extraída."
+    ]
+  },
+  {
+    "id": 21,
+    "pdf": "RESOLUÇÃO N° 11.2017 ",
+    "documents_needed": [
+      "Documento 'Nada Consta' emitido pela biblioteca (nos casos de trancamento de matrícula, abandono, transferência, demissão, licença não-remunerada ou encerramento de contrato)"
+    ],
+    "information_needed": [
+      "Ao utilizar os espaços do acervo, o usuário deve deixar pertences no guarda-volumes e adentrar apenas com materiais de estudo",
+      "Cadastro é realizado mediante vínculo institucional (trabalho ou matrícula nos cursos regulares)",
+      "O usuário tem direito a apenas um cadastro no campus onde possuir o vínculo",
+      "Perda do vínculo institucional resulta no cancelamento ou suspensão do cadastro",
+      "Empréstimo domiciliar não se aplica a obras de consulta local, periódicos, obras de referência, monografias, teses e dissertações impressas",
+      "O usuário só pode realizar o empréstimo de um exemplar da mesma obra",
+      "O empréstimo fica sob inteira responsabilidade do usuário, respondendo por estragos ou perdas",
+      "Usuário em atraso ou com pendência não pode usar o serviço de empréstimo",
+      "Empréstimo é suspenso automaticamente caso o estudante esteja em situação que requeira 'Nada Consta'",
+      "Material com data de devolução vencida ou sem empréstimo formalizado não pode ser emprestado",
+      "Renovação permitida até cinco vezes via web (dentro do prazo) e infinitas vezes presencialmente (se não houver impedimentos)",
+      "Não é permitida a reserva de exemplares que já estejam em poder do usuário"
+    ]
+  },
+  {
+    "id": 22,
+    "pdf": "RESOLUÇÃO CONSEPE/IFBA Nº 191/2025",
+    "documents_needed": [
+      "Requerimento Acadêmico à Coordenação do Curso com nome completo, número de matrícula e especificação das atividades (protocolado no Setor de Registros Acadêmicos)",
+      "Relatório das atividades desenvolvidas com a respectiva carga horária (assinado pelo discente, supervisor e coordenador de área)",
+      "Declaração emitida pela Coordenação de Área do PIBID atestando o período, carga horária desenvolvida e parecer sobre o aproveitamento pleiteado"
+    ],
+    "information_needed": [
+      "Atividades do PIBID podem ser aproveitadas para cumprimento de Estágios Supervisionados de Observação, Atividades de Extensão (ACEX) e Atividades Acadêmico-Científico-Culturais (AACC)",
+      "O aproveitamento (para Estágio e Extensão) será integral exigindo 4 horas de PIBID para cada 1 hora aproveitada",
+      "Exige-se compatibilidade entre as atividades do PIBID e os objetivos pedagógicos dos componentes curriculares a serem aproveitados",
+      "É vedada a utilização da mesma carga horária do PIBID para mais de uma atividade",
+      "O discente precisa estar regularmente matriculado no curso de licenciatura do IFBA na área do subprojeto do PIBID"
+    ]
+  },
+  {
+    "id": 23,
+    "pdf": "Resolucao-N-1110-2015-afastamento-pos-graduacao",
+    "documents_needed": [
+      "Comprovante de aprovação no programa de pós-graduação",
+      "Formulário de afastamento fornecido pela PGDP devidamente preenchido",
+      "Termo de compromisso de retorno ao Departamento de lotação",
+      "Declaração do Departamento de atendimento ao exposto no Art. 3o desta Resolução"
+    ],
+    "information_needed": []
+  },
+  {
+    "id": 24,
+    "pdf": "5867 Aprova a Resolução de Afastamento de servidores da UFPA word",
+    "documents_needed": [
+      "Requerimento padrão fornecido pela PROGEP",
+      "Termo de compromisso assinado pelo requerente (declarando ciência, obrigação de prestação de contas e produção de projeto de pesquisa para pós-graduação)",
+      "Documento da instituição promotora da ação de desenvolvimento (com título, local, carga-horária, comprovante de aceite, inscrição ou matrícula)",
+      "Cópia do trecho do Plano de Desenvolvimento de Pessoas (PDP) da UFPA prevendo a necessidade do afastamento/licença",
+      "Currículo atualizado do requerente (Sou.Gov ou Plataforma Lattes)",
+      "Manifestação da chefia imediata (concordância justificada pelo interesse da Administração Pública e aviso de inviabilidade de cumprimento de horário/jornada)",
+      "Manifestação de aprovação do colegiado máximo (se unidade acadêmica) ou do dirigente máximo (se unidade administrativa)"
+    ],
+    "information_needed": [
+      "O projeto de pesquisa (em caso de pós-graduação) deve ser alinhado à área de atribuição do cargo ou área de competências da unidade"
+    ]
+  },
+  {
+    "id": 25,
+    "pdf": "Resolução CONSUP/IFBA nº 144, de 08 de outubro de 2024",
+    "documents_needed": [
+      "Relatórios semestrais (para afastamento de pós-graduação)",
+      "Comprovante de recebimento pelo setor de qualificação da PRPGI (para afastamento de pós-graduação)",
+      "Relatório médico conforme protocolo de Licença para Tratamento de Saúde - LTS (para licença médica, puerpério ou licença maternidade)",
+      "Declaração ou atesto de exercício emitido pelo órgão (para servidor emprestado/cedido/requisitado para outro órgão)"
+    ],
+    "information_needed": []
+  },
+  {
+    "id": 26,
+    "pdf": "Resolução CONSUP/IFBA nº 04, de 19 de março de 2021",
+    "documents_needed": [
+      "Requerimento em formulário próprio da DGP",
+      "Cópia do trecho do PDP em que a ação esteja prevista",
+      "Pedido de exoneração ou dispensa de função/cargo (quando aplicável)",
+      "Publicação do ato de concessão do afastamento (quando aplicável)",
+      "Comprovante de matrícula na disciplina (para monografia/TCC/dissertação/tese)",
+      "Declaração da instituição confirmando a realização da atividade",
+      "Tradução juramentada ou por servidor com proficiência para documentos estrangeiros",
+      "Acordo de Cooperação Técnica e Plano de Trabalho (para licença capacitação com atividade prática em outro órgão)",
+      "Declaração da instituição com natureza, atividades, horários e responsável (para licença capacitação com atividade voluntária)",
+      "Declaração, certificado, diploma ou ata de defesa (para comprovação após retorno)",
+      "Relatório das atividades desenvolvidas",
+      "Comprovante de depósito do trabalho na biblioteca da unidade",
+      "Diploma definitivo (a ser apresentado em até 180 dias após defesa de stricto sensu)",
+      "Relatório semestral e Histórico acadêmico (para acompanhamento de pós-graduação)",
+      "Cronograma de reposição de horas aprovado (para horário especial de estudante)",
+      "Comprovante de desempenho acadêmico e de frequência (para manutenção do horário especial)"
+    ],
+    "information_needed": [
+      "Informar o local, carga horária prevista, período do afastamento e instituição promotora da ação",
+      "Informar os custos previstos (inscrição, diárias, passagens)",
+      "Justificar o interesse institucional da ação",
+      "Obter manifestação/concordância da chefia imediata e da unidade de gestão de pessoas",
+      "O Plano de Trabalho para licença em outro órgão deve conter objetivos, resultados esperados, duração, carga horária e responsável",
+      "O Relatório semestral de pós-graduação deve conter identificação, orientador, planos (planejado, executado, próximo), atividades acadêmicas e avaliação do orientador"
+    ]
+  },
+  {
+    "id": 27,
+    "pdf": "Edital_01_2021",
+    "documents_needed": [
+      "01 foto 3x4 recente e 01 foto 3x4 atual",
+      "Documento de Identificação original com foto (RG, CIN, CNH, CTPS ou Carteira Profissional)",
+      "Certidão de Nascimento ou Certidão de Casamento",
+      "Título de Eleitor e Certidão de Quitação Eleitoral atual emitida pelo TSE (para maiores de 18 anos)",
+      "Comprovante de Vacinação Antitetânica atualizada (Resolução nº 19/2006 do IFBA)",
+      "Histórico Escolar completo do 1º ao 3º ano do Ensino Médio",
+      "Certificado de conclusão do Ensino Médio (se estiver no verso, anexar novamente o histórico)",
+      "Comprovante de situação militar: CAM, Reservista, CDI, CI, Cartão/Carteira do Ministério Militar ou atestado da Junta Militar com número RA (para candidatos homens entre 18 e 45 anos)",
+      "Documento oficial de identificação de um responsável legal (fotocópia simples, para menores de 18 anos)",
+      "Visto de permanência, cédula de identidade expedida pela PF ou passaporte com visto temporário válido (para candidatos estrangeiros)"
+    ],
+    "information_needed": []
+  },
+  {
+    "id": 28,
+    "pdf": "Edital_N_C2_BA_13.2025.DG.DEMAT.IFA_SSA_assinado__1_",
+    "documents_needed": [
+      "Ficha de inscrição (Anexo III) preenchida digitalizada",
+      "Registro Geral (RG) e Cadastro de Pessoas Físicas (CPF)",
+      "Foto 3x4, fundo neutro",
+      "Certidão de quitação eleitoral baixada no site do TSE (se maior de 18 anos)",
+      "Histórico escolar contendo a nota da disciplina para a qual concorre e o Coeficiente de Rendimento atual",
+      "Comprovante de Matrícula disponível no SUAP",
+      "Curriculum Vitae Simplificado (Anexo IV) ou Currículo Lattes (CNPq)",
+      "Comprovantes das atividades do currículo (certificados, declarações, projetos) (Anexo V)",
+      "Declaração de bolsista PAAE (quando for o caso)",
+      "Laudo Médico emitido nos últimos 12 meses com CID, carimbo e assinatura (para atestar deficiência, se aplicável)",
+      "Termo de compromisso preenchido e assinado pelo candidato e professor orientador (para efetivação da bolsa, via e-mail)",
+      "Comprovante de dados bancários para depósito da bolsa (não pode ser conta conjunta nem conta salário)"
+    ],
+    "information_needed": [
+      "Ser maior de 18 anos e estar matriculado em curso de nível superior (não concluinte em 2025) OU ser maior de 16 anos e matriculado no 3º ano do ensino técnico de nível médio",
+      "Possuir no mínimo 75% de frequência no curso/disciplina relacionada à vaga",
+      "Ter aprovação com média ≥ 7,0 na disciplina pré-requisito (ou em Matemática no 1º ou 2º ano do ensino médio para ensino técnico/monitoria básica)",
+      "É vedada a acumulação dos auxílios de Iniciação Científica e de Monitoria",
+      "Enviar os documentos em um único arquivo formato PDF"
+    ]
+  },
+  {
+    "id": 29,
+    "pdf": "Edital Interno DPAAE 01/2025",
+    "documents_needed": [],
+    "information_needed": [
+      "Ser servidor(a) efetivo(a) e ativo(a) do IFBA",
+      "Não estar de férias, cedido(a), de licença ou aposentado(a) durante a atuação em bancas do SISU 2026/seleções simplificadas (devido ao pagamento de GECC)",
+      "A restrição de não estar de férias/licença não se aplica à banca do Ingresso 2026 (pagamento via Fundação CEFETMinas)",
+      "Não possuir cônjuge, filho(a) ou parente até 2º grau concorrendo ao INGRESSO 2026 ou SISU 2026, ou qualquer conflito de interesse",
+      "Ter disponibilidade de carga horária compatível com as atividades",
+      "Dispor de computador e internet para atividades remotas",
+      "Ter disponibilidade presencial caso necessário (para Bancas de Heteroidentificação Racial e Biopsicossocial)",
+      "Possuir domínio de conhecimento na área e participar integralmente dos treinamentos (ausência sem justificativa acarreta exclusão)"
+    ]
+  },
+  {
+    "id": 30,
+    "pdf": "RESOLUÇÃO CONSUP/IFBA Nº 146, DE 31 DE OUTUBRO DE 2024",
+    "documents_needed": [
+      "Declaração de Horário assinada pela chefia imediata (para comunicação de percentual de presencialidade e pagamento de Auxílio transporte, via SEI)",
+      "Termo de Ciência e Responsabilidade (TCR) assinado pelo participante (Anexo I) e registrado no sistema",
+      "Plano de Entregas da Unidade de Execução com prazos, demandantes e metas",
+      "Plano de trabalho pactuado entre o participante e a chefia no sistema",
+      "Justificativas documentadas prestadas à chefia em caso de descumprimento de prazos/metas"
+    ],
+    "information_needed": [
+      "O teletrabalho não pode abranger atividades que exigem presença física obrigatória, trabalho externo, ou que impossibilitem atendimento ao público",
+      "Vedado para quem foi desligado nos últimos 12 meses por não cumprimento de metas",
+      "O dirigente divulgará critérios como tipo de adesão, regime, limites, perfis, e infraestrutura necessária por meio de editais publicados e comunicados ao MGI",
+      "O participante deve registrar as entregas e ocorrências até o 10º dia do mês subsequente ao encerramento",
+      "A chefia avaliará a execução em até 20 dias após o registro, enviando informações para desconto em folha em caso de inadequação ou não execução",
+      "O participante deve custear a infraestrutura necessária física e tecnológica e garantir conformidade com normas de segurança do trabalho",
+      "O desligamento a pedido exige 30 dias de antecedência. Desligamento por interesse da administração tem prazo de 30 dias (ou 2 meses se residente no exterior) para retorno presencial",
+      "Em caso de suspensão do PGD, o retorno ao controle de frequência presencial deve ocorrer em 30 dias (ou 2 meses se no exterior)"
+    ]
+  },
+  {
+    "id": 31,
+    "pdf": "SISU-2026-SEI_UFMG-4871178-Edital",
+    "documents_needed": [
+      "Certificado de conclusão do Ensino Médio ou equivalente (original digitalizado)",
+      "Histórico escolar do Ensino Médio (para vagas reservadas, deve atestar que cursou todo o ensino médio em escola pública/comunitária)",
+      "Documento de identidade (ou cédula da PF/passaporte com visto válido para estrangeiros)",
+      "Documento que comprove a quitação com as obrigações eleitorais",
+      "Documento que comprove a quitação com as obrigações do serviço militar (para homens maiores de 18 anos e menores de 46 anos)",
+      "CPF",
+      "Declaração de que não ocupa vaga em curso de graduação em outra instituição pública brasileira (formulário online no registro acadêmico)",
+      "Declaração de Conclusão de Ensino Médio (provisória, caso não possua o certificado ainda, com as devidas atestações dependendo da modalidade)",
+      "Parecer de Equivalência de Estudos emitido pela Secretaria de Estado de Educação com publicação no DOE (para quem concluiu no exterior)",
+      "Carta consubstanciada sobre pertencimento étnico-racial (formulário online) para autodeclarados negros (pretos/pardos)",
+      "Carta consubstanciada de pertencimento étnico e declaração da respectiva comunidade para quilombolas e indígenas",
+      "Relatório original do profissional de saúde (para pessoa com deficiência)",
+      "Comprovantes de renda do grupo familiar (para vagas de renda inferior a 1 salário-mínimo per capita)"
+    ],
+    "information_needed": [
+      "O candidato convocado deve efetuar o registro acadêmico via internet, na página da UFMG (www.ufmg.br/sisu)",
+      "Apresentar a documentação exigida em formato digital (integral, legível, sem rasuras ou cortes)",
+      "Ser aprovado em análises de documentos e procedimentos presenciais (deficiência, heteroidentificação) no Campus Pampulha ou Montes Claros",
+      "Não é permitido escolher o período letivo de entrada (1º ou 2º período de 2026), que será definido pela ordem de classificação",
+      "Candidatos em vaga reservada terão o registro inicialmente \"em análise\" até a conclusão das verificações",
+      "Candidatos que já possuem vínculo em curso de graduação na UFMG ou em outra instituição pública deverão cancelar o vínculo anterior após a confirmação do novo registro",
+      "O não cumprimento das etapas, falha no envio dos documentos ou fraude implicará na perda automática do direito à vaga"
+    ]
+  },
+  {
+    "id": 32,
+    "pdf": "UFV-Edital-SISU2026_20260205",
+    "documents_needed": [
+      "Certificado de Conclusão do Ensino Médio e Histórico Escolar (ou declaração provisória de conclusão)",
+      "Certidão de Nascimento ou de Casamento",
+      "RG, Carteira de Identidade Nacional ou Registro Nacional Migratório (RNM para estrangeiros)",
+      "CPF (ou comprovante da Receita Federal ou RG com CPF)",
+      "Comprovante de regularização junto ao Tribunal Superior Eleitoral",
+      "Comprovante de quitação com o Serviço Militar (sexo masculino)",
+      "Cartão de vacinas atualizado",
+      "Documentação do Ensino Médio autenticada em Representação Consular e traduzida (ou Parecer de Equivalência) para concluintes no exterior",
+      "Declaração da Modalidade da Vaga Reservada (preenchida no sistema)",
+      "Declaração da(s) escola(s) informando período frequentado (para escola pública/comunitária, Anexo I)",
+      "Certificação pelo ENCCEJA, sistemas estaduais ou ENEM com o respectivo Histórico Escolar (quando aplicável)",
+      "Declaração no sistema de que não cursou ensino médio em escolas particulares (para certificados via ENCCEJA/ENEM/exames)",
+      "Declaração de Frequência à Escola (caso tenha frequentado ensino médio regular em algum momento)",
+      "Declaração da escola comunitária com CNPJ/categoria e termo de convênio (se aplicável)",
+      "Formulário de Verificação do Perfil de Renda (Anexo III) e CadÚnico atualizado ou Documentação Ampliada (para modalidades LB)",
+      "Autodeclaração étnico-racial preenchida, foto atualizada e vídeo lendo a autodeclaração (para LB_PPI e LI_PPI)",
+      "Registro de Nascimento Indígena/Carta de Recomendação e Memorial de Educação Indígena (para candidatos indígenas)",
+      "Formulário do Laudo Médico 2026 preenchido e assinado, com exames ou relatórios comprobatórios específicos por tipo de deficiência (para modalidades LB_PCD e LI_PCD)"
+    ],
+    "information_needed": [
+      "Candidatos de vagas reservadas (renda, escola pública, etnia, PCD) devem comprovar enquadramento legal detalhado por meio dos anexos específicos do edital",
+      "A renda familiar per capita não poderá ultrapassar 1 salário mínimo vigente nos três meses anteriores à inscrição para vagas LB",
+      "Candidatos quilombolas não farão matrícula se a condição não for validada pela comissão competente"
+    ]
+  },
+  {
+    "id": 33,
+    "pdf": "RESOLUÇÃO CONSUP/IFBA Nº 158, de 09 de abril de 2025",
+    "documents_needed": [
+      "Relatório de Gestão do IFBA elaborado na forma de relato integrado"
+    ],
+    "information_needed": [
+      "O Relatório de Gestão deve seguir as diretrizes do TCU (IN 84/2020 e DN 198/2022) e ser aprovado pelo CONSUP antes de publicado",
+      "A PRODIN/GEPLAN conduz o processo e coleta informações junto às unidades estratégicas (Gabinete, Pró-Reitorias, Campi, etc.)",
+      "O IFBA deve divulgar proativamente informações (LAI) em canais oficiais e no Portal Brasileiro de Dados Abertos",
+      "O Serviço de Informação ao Cidadão recebe demandas da Plataforma Fala.BR, de uso obrigatório",
+      "Demandantes de obras devem planejar e enviar demandas com antecedência, focando em decisões técnicas e manutenção preventiva",
+      "Projetos de pesquisa devem alinhar-se às necessidades sociais; projetos de extensão devem priorizar o público vulnerável"
+    ]
+  },
+  {
+    "id": 34,
+    "pdf": "RESOLUÇÃO CONSEPE/IFBA Nº 160, de 29 de abril de 2025",
+    "documents_needed": [
+      "Relatório Institucional Consolidado dos Grupos PET do IFBA (ano-base de 2024)"
+    ],
+    "information_needed": [
+      "O Relatório deve ser aprovado pelo CONSEPE/IFBA (podendo ocorrer aprovação \"ad referendum\" pelo Vice-Presidente do CONSEPE)",
+      "As resoluções devem ter um processo administrativo formal do SEI prévio",
+      "Entrada em vigor de resoluções deve respeitar a data definida, admitindo vigor imediato em caso de urgência justificada",
+      "Documentos oficiais podem ser assinados eletronicamente (Decreto nº 8.539/2015) e devem ter código verificador e CRC para validação de autenticidade no sistema"
+    ]
+  },
+  {
+    "id": 35,
+    "pdf": "RESOLUÇÃO CONSEPE/IFBA Nº 144, DE 02 DE AGOSTO DE 2024",
+    "documents_needed": [],
+    "information_needed": [
+      "Representantes docentes e técnico-administrativos não podem estar em cargo de direção (CD), afastados para qualificação, nem pertencer ao CONSUP, CPA, CPPD ou CIS/PCCTAE",
+      "Representantes do Conselho de cada Campus não podem estar afastados para qualificação nem ser membros do CONSUP, CPA, CPPD, CIS/PCCTAE ou Colégio de Dirigentes",
+      "Representantes discentes devem ter matrícula regular ativa (em nível médio, graduação ou pós-graduação, qualquer modalidade)",
+      "Representantes discentes não podem ter matrícula trancada, nem ser membros do CONSUP ou da CPA"
+    ]
+  },
+  {
+    "id": 36,
+    "pdf": "RESOLUÇÃO Nº 32, DE 09 DE OUTUBRO DE 2018.",
+    "documents_needed": [
+      "Comunicação à secretaria justificando não comparecimento à reunião (com 48h de antecedência)"
+    ],
+    "information_needed": [
+      "Representantes docentes e técnico-administrativos não podem estar em exercício de cargo de direção (CD), afastados para qualificação, ou ser membros do CONSUP, CPA, CPPD, ou CIS/PCCTAE",
+      "Representantes do Conselho de cada Campus não podem estar afastados para qualificação ou ser membros do CONSUP, CPA, CPPD, CIS/PCCTAE ou Colégio de Dirigentes",
+      "Representantes discentes devem ter matrícula regular ativa nos cursos de educação profissional técnica ou superior, independentemente da modalidade",
+      "Representantes discentes não podem ter matrícula trancada ou ser membros do CONSUP ou da CPA",
+      "Processos recebidos com pedido de vista devem ser devolvidos em até 10 dias úteis após a reunião",
+      "Processos dos quais foi pedido vista devem retornar ao seu relator",
+      "Procedimentos para apreciação de matérias em pauta incluem apresentação, leitura do parecer, discussão mediante inscrição, síntese das propostas, votação e encaminhamentos",
+      "Pareceres ou deliberações de câmaras e comissões devem ser submetidos ao CONSEPE"
+    ]
+  },
+  {
+    "id": 37,
+    "pdf": "chamada publica cci 2025–2026",
+    "documents_needed": [],
+    "information_needed": []
+  },
+  {
+    "id": 38,
+    "pdf": "SEI_4395363_Edital_22",
+    "documents_needed": [],
+    "information_needed": []
+  },
+  {
+    "id": 39,
+    "pdf": "edital-no-29-2024-prpgi",
+    "documents_needed": [
+      "Declaração da direção do Campus atestando a responsabilidade pelo Laboratório/instalações multiusuário",
+      "Registro do Laboratório e equipamentos junto à PRPGI"
+    ],
+    "information_needed": [
+      "Proponente deve ser o responsável pelo Laboratório onde estão as instalações/equipamento multiusuário",
+      "Proponente precisa estar adimplente com todos os programas da PRPGI",
+      "Proponente deve pertencer ao quadro de docentes ativos e permanentes de um programa de pós-graduação stricto sensu do IFBA",
+      "As propostas devem estar devidamente justificadas quanto à utilização dos recursos no âmbito da pós-graduação"
+    ]
+  },
+  {
+    "id": 40,
+    "pdf": "chamada-no-12-2023",
+    "documents_needed": [
+      "Histórico Escolar de Graduação",
+      "Plano de trabalho de pesquisa (Anexo I)",
+      "Diploma de Graduação ou declaração da instituição atestando a integralização de 80% da carga horária",
+      "Carta do candidato com requerimento (exposição das razões da inscrição, link do Lattes e relação de disciplinas desejadas como aluno não-regular)"
+    ],
+    "information_needed": [
+      "Toda a documentação exigida deve ser enviada como anexo encapsulada em um único arquivo PDF"
+    ]
+  },
+  {
+    "id": 41,
+    "pdf": "INGRESSO 2026.2 - SIMPLIFICADO SUBSEQUENTE 2026.2 - 2026.2 SUBSEQUENTE INGRESSO SIMPLIFICADO",
+    "documents_needed": [],
+    "information_needed": [
+      "Aceder ao sistema online de inscrições do Ingresso Simplificado 2026.2 através do link fornecido",
+      "Criar cadastro no sistema utilizando o CPF do próprio candidato e criar uma senha pessoal",
+      "Informar os dados pessoais solicitados",
+      "Informar a escolaridade e os tipos de escola (pública ou privada) onde frequentou todo o Ensino Médio (incluindo o 3º ano em curso, se aplicável)",
+      "Escolher o campus onde deseja estudar",
+      "Selecionar um curso como 1ª option",
+      "Selecionar um curso diferente como 2ª opção (caso o campus disponha de mais de um curso na mesma forma de oferta)",
+      "Escolher o tipo de vaga a que deseja concorrer (reservas de vagas/cotas ou Ampla Concorrência), garantindo que cumpre os critérios"
+    ]
+  },
+  {
+    "id": 42,
+    "pdf": "Processo Seletivo Simplificado para Contratação de Professor Substituto (Edital 22/26 - Campus Simões Filho)",
+    "documents_needed": [
+      "Certificado de Proficiência em Língua Portuguesa para Estrangeiros (Celpe-Bras), no caso de nacionalidade estrangeira",
+      "Visto permanente ou temporário que habilite a trabalhar no território nacional (para estrangeiros)",
+      "Diplomas expedidos por universidades estrangeiras devidamente revalidados e registados (conforme a legislação brasileira)"
+    ],
+    "information_needed": [
+      "Ser cidadão brasileiro nato ou naturalizado, ou estrangeiro com situação regular no país",
+      "Ter a idade mínima de 18 anos completos na data da contratação",
+      "Possuir a formação académica exigida na área de conhecimento a que concorre (conforme o Anexo I)",
+      "Estar em pleno gozo dos direitos políticos",
+      "Estar quite com as obrigações militares e eleitorais",
+      "Possuir aptidão física e mental para o exercício da função",
+      "Não ter sido contratado (sob a Lei nº 8.745/93) nos últimos 24 meses",
+      "Não ser servidor ocupante de cargo efetivo nas carreiras de magistério da Lei nº 7.596/1987"
+    ]
+  },
+  {
+    "id": 43,
+    "pdf": "Afastamento para estudos",
+    "documents_needed": [
+      "Formulário específico preenchido e assinado (COAC - AFASTAMENTO PARA ESTUDOS, COAC - PRORROGAÇÃO DE AFASTAMENTO PARA ESTUDO, COAC - RETORNO DE AFASTAMENTO DE ESTUDO ou COAC - CANCELAMENTO, SUSPENSÃO E INTERRUPÇÃO DO AFASTAMENTO)",
+      "Documento de Matrícula (para Mestrado ou Doutorado) ou Carta de Aceite (para Pós-Doutorado)",
+      "Trecho atualizado do Plano de Desenvolvimento de Pessoas (PDP) do IFBA que preveja a ação de desenvolvimento",
+      "Ata da reunião da área atestando a aprovação da distribuição das atividades (para Docentes sem contratação de substituto)",
+      "Despacho com manifestação/autorização da Chefia imediata (para Técnicos-Administrativos ou casos de prorrogação/cancelamento/retorno)",
+      "Despacho/Manifestação do setor de Gestão de Pessoas sobre eventuais pendências",
+      "Despacho/Manifestação da Direção-Geral do campus",
+      "Justificativa consubstanciada assinada pelo Orientador (em caso de prorrogação)",
+      "Comprovante atual ou temporário de conclusão/aprovação no curso e situação do servidor (para retornos ou cancelamentos)",
+      "Relacionar o processo de solicitação original (em caso de retorno ou cancelamento)",
+      "Diploma (para mestrado e doutorado, a ser entregue até 12 meses após a conclusão)",
+      "Declaração de conclusão ou documento equivalente (para pós-doutorado)"
+    ],
+    "information_needed": [
+      "O processo deve ser encaminhado para a Coordenação de Aperfeiçoamento e Capacitação (COAC) após a tramitação no campus",
+      "Para prorrogações, a PRPGI emite despacho sobre a aptidão do servidor e a PROEN providencia a contratação ou manutenção de Professor Substituto, se necessário",
+      "Em caso de retorno, se este for adiado por motivos de férias ou licença, o servidor deverá indicá-lo no processo"
+    ]
+  },
+  {
+    "id": 44,
+    "pdf": "RESOLUÇÃO DO CONSELHO SUPERIOR 49 2024",
+    "documents_needed": [
+      "Declaração que comprove a matrícula em disciplina de trabalho de conclusão de curso, dissertação ou tese (se aplicável a educação formal)"
+    ],
+    "information_needed": [
+      "A licença para capacitação (com remuneração por até 3 meses) pode ser solicitada a cada quinquénio de efetivo exercício, não sendo acumuláveis os períodos adquiridos",
+      "A licença destina-se a ações de desenvolvimento, elaboração de TCC/monografia/dissertação/tese, intercâmbio de línguas ou atividades práticas/voluntárias conjugadas",
+      "Afastamentos por doença na família sem remuneração, interesses particulares, pena privativa de liberdade ou acompanhamento de cônjuge interrompem a contagem do quinquénio",
+      "A licença pode ser parcelada em até 6 períodos (mínimo de 15 dias cada), respeitando o intervalo de 60 dias entre usufrutos",
+      "Os eventos de capacitação exigem uma carga horária superior a 30 horas semanais e mínimos estipulados (65h para 15 dias; 130h para 30 dias; até 390h para 90 dias)",
+      "Em caso de elaboração de TCC, dissertação ou tese, a quantidade de horas é dispensada, exigindo-se apenas a apresentação da matrícula na respetiva disciplina",
+      "A reprovação ou não conclusão obriga à devolução dos valores da remuneração e gastos da capacitação"
+    ]
+  },
+  {
+    "id": 45,
+    "pdf": "NaN",
+    "documents_needed": [
+      "Plano de estudos/cronograma",
+      "Aceite da instituição",
+      "Documento da CAPES",
+      "Liberação de atividades externas",
+      "Relatório semestral com parecer do orientador, produção científica e histórico escolar (a enviar até ao final de fevereiro e agosto)",
+      "Cópia impressa e em suporte eletrónico da dissertação/tese/relatório de estágio (a entregar num prazo de 3 meses após a conclusão)"
+    ],
+    "information_needed": [
+      "Ser servidor do quadro efetivo há pelo menos 3 anos (Mestrado) ou 4 anos (Doutorado/Pós-Doutorado)",
+      "Ter tempo mínimo para aposentação superior a 5 anos (Mestrado) ou 8 anos (Doutorado/Pós-Doutorado)",
+      "Não ter gozado de licença para assuntos particulares ou capacitação nos últimos 2 a 4 anos",
+      "Não estar a responder a processo disciplinar (PAD) e não ter pendências administrativas ou pedagógicas",
+      "Ser aceite como aluno regular num programa avaliado com nota 3 ou superior pela CAPES",
+      "A solicitação inicial deve ser protocolada com pelo menos 60 dias de antecedência no campus (ou na Reitoria para prorrogações)",
+      "Duração máxima de afastamento: 24 meses (Mestrado), 36 meses (Doutorado) e 12 meses (Pós-Doutorado)",
+      "Após o regresso, é obrigatório prestar serviços à instituição pelo mesmo período em que esteve afastado",
+      "A apresentação ao instituto deve ser efetuada num prazo máximo de 15 dias após o término do curso",
+      "O abandono, reprovação ou exoneração antes de cumprir o período obrigatório implica o ressarcimento financeiro das despesas"
+    ]
+  },
+  {
+    "id": 46,
+    "pdf": "Resolução CONSEP/IFBA, 25 de Maio de 2023",
+    "documents_needed": [],
+    "information_needed": []
+  },
+  {
+    "id": 47,
+    "pdf": "Normas para afastamento docente, Resolução IFMG",
+    "documents_needed": [
+      "Comprovante ou declaração emitida pelo programa de pós-graduação atestando a matrícula, prazo, data de início e término do curso",
+      "Comprovante de horário das disciplinas ou atividades do primeiro e/ou segundo semestre letivo",
+      "Justificativa anexada ao processo (considerando o Decreto 9.991/2019, Art. 19, inciso III)"
+    ],
+    "information_needed": [
+      "O afastamento pode ser concedido a aluno regular em pós-graduação Stricto Sensu (mestrado, doutorado, pós-doutorado) no país ou exterior",
+      "Aplica-se quando a participação for incompatível com o exercício do cargo ou compensação de horário",
+      "O afastamento só será concedido após a contratação de um docente substituto",
+      "Independe do tempo ocupado no cargo ou na instituição",
+      "Os documentos (comprovante de matrícula e de horário) devem ser anexados ao processo no SEI em até 5 dias úteis após a efetivação da matrícula",
+      "O processo deve ser encaminhado ao Setor de Gestão de Pessoas do campus"
+    ]
+  },
+  {
+    "id": 48,
+    "pdf": "Resolução CONSUP N° 178",
+    "documents_needed": [
+      "Formulário de substituição e reposição de aulas (Anexo I) devidamente preenchido e assinado"
+    ],
+    "information_needed": [
+      "Nas ausências programadas, dá-se prioridade à permuta de aulas com outros docentes",
+      "O docente deve comunicar a todas as Coordenações do Curso envolvidas a justificativa e a proposta de permuta com no mínimo 15 dias de antecedência",
+      "A proposta de permuta exige a ciência dos docentes envolvidos (que passam a ser responsáveis pelos horários)",
+      "Pode propor-se a permuta para turmas que possuam horários livres no turno vigente",
+      "Se a permuta não for possível, pode ser proposta a antecipação ou reposição (aprovada pelo Coordenador após consulta ao setor pedagógico)",
+      "A ausência programada só é válida se deferida pelas Coordenações de Curso envolvidas",
+      "O formulário pode ser enviado por correio eletrónico (e-mail) desde que seja posteriormente entregue assinado e preenchido num prazo de 48 horas (caso contrário, perde o efeito)"
+    ]
+  },
+  {
+    "id": 49,
+    "pdf": "IFBA_CONSEPE_resolucao_153_2024\n",
+    "documents_needed": [
+      "Instrumento de avaliação (exame de convalidação) e demais documentos referentes ao processo (a serem arquivados na pasta do estudante na GRA/CORES e registados no SUAP)"
+    ],
+    "information_needed": [
+      "Conhecimento prévio (adquirido na trajetória académica e profissional) pode dispensar disciplinas apenas após passar por convalidação",
+      "A avaliação para convalidação resulta na atribuição de nota à disciplina requerida",
+      "A aprovação requer uma nota igual ou superior à média de aprovação vigente no IFBA",
+      "Os prazos para solicitação, encaminhamento e realização de exames serão definidos no calendário académico do Campus",
+      "O estudante que solicitar o exame será inscrito na disciplina a ser avaliada no semestre letivo posterior",
+      "As disciplinas avaliadas por convalidação não contabilizam para os limites mínimo ou máximo de inscrição de componentes por período letivo",
+      "Não se aplica exame de convalidação a Estágio, Monografia, TCC, Projeto, ACEX e outras disciplinas definidas pelo Projeto Pedagógico do Curso (PPC)",
+      "O Colegiado do Curso define quais disciplinas são passíveis de convalidação quando não constam no PPC",
+      "O aproveitamento aplica-se apenas a disciplinas que visem a integralização do curso de graduação do discente no IFBA"
+    ]
+  },
+  {
+    "id": 50,
+    "pdf": "Chamado aluno não regular 12-2023-prpgi-ifba",
+    "documents_needed": [
+      "Histórico Escolar de Graduação",
+      "Plano de trabalho de pesquisa (conforme o Anexo I)",
+      "Diploma de Graduação ou declaração institucional atestando a integralização de 80% da carga horária",
+      "Carta do candidato com breve exposição das razões para a inscrição, o link do currículo Lattes e a relação das disciplinas que gostaria de frequentar"
+    ],
+    "information_needed": [
+      "As inscrições serão recebidas exclusivamente pelo e-mail ppgem.ssa@ifba.edu.br entre 26/12/2023 e 26/01/2024",
+      "O assunto do e-mail deve indicar obrigatoriamente o termo \"Aluno Não Regular – SELEÇÃO 2024.1\"",
+      "A documentação deve ser enviada como anexo encapsulado num único arquivo PDF",
+      "Em caso de múltiplos envios, será considerada apenas a mensagem mais recente",
+      "O limite de disciplinas cursadas como aluno não regular é de 2 (duas) disciplinas por um único semestre, escolhidas pelo Colegiado do PPGEM",
+      "O número total de disciplinas cursadas na condição de matrícula especial está limitado a 4 (quatro), contabilizando as de semestres anteriores"
+    ]
+  }
+]

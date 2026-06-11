@@ -18,7 +18,12 @@ class DataLoaderService:
         for filename in os.listdir(pdfs_directory):
             if filename.lower().endswith(".pdf"):
                 # Extract ID: everything before the first underscore, or the filename itself
-                file_id = filename.split('_')[0] if '_' in filename else os.path.splitext(filename)[0]
+                raw_id = filename.split('_')[0] if '_' in filename else os.path.splitext(filename)[0]
+                try:
+                    # Normalize ID: remove leading zeros (e.g., "01" -> "1")
+                    file_id = str(int(raw_id))
+                except ValueError:
+                    file_id = raw_id
                 mapping[file_id] = os.path.join(pdfs_directory, filename)
         
         return mapping
@@ -49,4 +54,5 @@ class DataLoaderService:
     def load_ground_truth(self, json_path: str) -> Dict:
         """Loads a single JSON file containing multiple ground truths indexed by ID."""
         with open(json_path, 'r') as file:
-            return json.load(file)
+            data = json.load(file)
+            return {str(item["id"]): item for item in data}

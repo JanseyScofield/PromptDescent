@@ -7,7 +7,7 @@ from config.app_settings import settings
 from services.data_loaders_service import DataLoaderService
 from models.evaluation_results import EvaluationResult
 from ai_agents.ai_agent import AIAgent
-from ai_agents.openai_agent import OpenAIAgent
+from ai_agents.gemini_agent import GeminiAgent
 
 def run_prompt_gradient_descent(agent: AIAgent, loader: DataLoaderService, enable_logging: bool = False) -> str:
     """
@@ -36,8 +36,14 @@ def run_prompt_gradient_descent(agent: AIAgent, loader: DataLoaderService, enabl
 
     print(f"\n[Iteration 0] Starting Prompt: {current_prompt}")
     
-    # List of IDs to process
-    pdf_ids = list(pdf_mapping.keys())
+    # List of IDs to process (sorted for predictability)
+    pdf_ids = sorted(list(pdf_mapping.keys()), key=lambda x: int(x) if x.isdigit() else x)
+    
+    # Apply file limit if configured
+    if settings.max_files is not None:
+        pdf_ids = pdf_ids[:settings.max_files]
+        log(f"Limiting universe to the first {settings.max_files} IDs: {pdf_ids}")
+
     prompt_history = []
 
     # Ensure history directory exists
@@ -143,9 +149,13 @@ def run_prompt_gradient_descent(agent: AIAgent, loader: DataLoaderService, enabl
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run the Prompt Optimization Gradient Descent.")
     parser.add_argument("--log", action="store_true", help="Enable verbose logging during execution.")
+    parser.add_argument("--max-files", type=int, help="Maximum number of IDs to process.")
     args = parser.parse_args()
 
-    agent = OpenAIAgent()
+    if args.max_files is not None:
+        settings.max_files = args.max_files
+
+    agent = GeminiAgent()
     loader = DataLoaderService()
     
     result = run_prompt_gradient_descent(agent, loader, enable_logging=args.log)
