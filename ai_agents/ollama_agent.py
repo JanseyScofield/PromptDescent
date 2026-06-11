@@ -1,33 +1,42 @@
 import json
-from typing import Dict, Optional
-from openai import OpenAI
+from typing import Dict, Optional, Type, Any
+from ollama import Client
 from config.app_settings import settings
 from models.extracted_rules import ExtractedRules
 from models.evaluation_results import EvaluationResult
 from models.prompt_update import PromptUpdate
 from ai_agents.ai_agent import AIAgent
 
-class OpenAIAgent(AIAgent):
+class OllamaAgent(AIAgent):
     def __init__(self):
-        self.client = OpenAI(api_key=settings.openai_api_key)
-        self.extraction_model = settings.openai_extraction_model
-        self.evaluation_model = settings.openai_evaluation_model
+        self.client = Client(host=settings.ollama_host)
+        self.extraction_model = settings.ollama_extraction_model
+        self.evaluation_model = settings.ollama_evaluation_model
+
+    def _generate_structured_output(self, model: str, system_prompt: str, user_content: str, response_schema: Type) -> Optional[Any]:
+        try:
+            response = self.client.chat(
+                model=model,
+                messages=[
+                    {'role': 'system', 'content': system_prompt},
+                    {'role': 'user', 'content': user_content},
+                ],
+                format=response_schema.model_json_schema()
+            )
+            # The ollama client returns a ChatResponse, text is in ['message']['content']
+            return response_schema.model_validate_json(response['message']['content'])
+        except Exception as e:
+            print(f"Error during Ollama API call: {e}")
+            return None
 
     def extract_rules(self, document_text: str, current_prompt: str) -> Optional[ExtractedRules]:
-        try:
-            response = self.client.beta.chat.completions.parse(
-                model=self.extraction_model,
-                messages=[
-                    {"role": "system", "content": current_prompt},
-                    {"role": "user", "content": f"Extract rules from:\n\n{document_text[:settings.max_document_length]}"}
-                ],
-                response_format=ExtractedRules,
-                temperature=0.0 
-            )
-            return response.choices[0].message.parsed
-        except Exception as e:
-            print(f"Error during API extraction: {e}")
-            return None
+        user_content = f"Extract rules from:\n\n{document_text[:settings.max_document_length]}"
+        return self._generate_structured_output(
+            self.extraction_model,
+            current_prompt,
+            user_content,
+            ExtractedRules
+        )
 
     def evaluate_extraction(self, ai_answers: ExtractedRules, ground_truth: Dict, document_text: str) -> Optional[EvaluationResult]:
         system_prompt = """
@@ -47,21 +56,12 @@ class OpenAIAgent(AIAgent):
             f"GROUND TRUTH (Target):\n{json.dumps(ground_truth)}\n\n"
             f"AI EXTRACTION (Current):\n{ai_answers.model_dump_json()}"
         )
-        
-        try:
-            response = self.client.beta.chat.completions.parse(
-                model=self.evaluation_model,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_content}
-                ],
-                response_format=EvaluationResult,
-                temperature=0.0
-            )
-            return response.choices[0].message.parsed
-        except Exception as e:
-            print(f"Error during API evaluation: {e}")
-            return None
+        return self._generate_structured_output(
+            self.evaluation_model,
+            system_prompt,
+            user_content,
+            EvaluationResult
+        )
 
     def generate_initial_prompt(self) -> str:
         return (
@@ -77,17 +77,10 @@ class OpenAIAgent(AIAgent):
         """
         user_content = f"Current Prompt:\n{current_prompt}\n\nError Score: {evaluation.error_score}\n\nFeedback:\n{evaluation.feedback}"
         
-        try:
-            response = self.client.beta.chat.completions.parse(
-                model=self.evaluation_model,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_content}
-                ],
-                response_format=PromptUpdate,
-                temperature=0.7 
-            )
-            return response.choices[0].message.parsed.new_prompt
-        except Exception as e:
-            print(f"Error during API optimization: {e}")
-            return current_prompt
+        result = self._generate_structured_output(
+            self.evaluation_model,
+            system_prompt,
+            user_content,
+            PromptUpdate
+        )
+        return result.new_prompt if result else current_prompt

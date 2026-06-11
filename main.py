@@ -7,7 +7,7 @@ from config.app_settings import settings
 from services.data_loaders_service import DataLoaderService
 from models.evaluation_results import EvaluationResult
 from ai_agents.ai_agent import AIAgent
-from ai_agents.gemini_agent import GeminiAgent
+from ai_agents.ollama_agent import OllamaAgent
 
 def run_prompt_gradient_descent(agent: AIAgent, loader: DataLoaderService, enable_logging: bool = False) -> str:
     """
@@ -155,7 +155,7 @@ if __name__ == "__main__":
     if args.max_files is not None:
         settings.max_files = args.max_files
 
-    agent = GeminiAgent()
+    agent = OllamaAgent()
     loader = DataLoaderService()
     
     result = run_prompt_gradient_descent(agent, loader, enable_logging=args.log)

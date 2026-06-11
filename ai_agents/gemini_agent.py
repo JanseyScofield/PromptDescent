@@ -17,8 +17,8 @@ logger = logging.getLogger(__name__)
 class GeminiAgent(AIAgent):
     def __init__(self):
         self.client = genai.Client(api_key=settings.gemini_api_key)
-        self.extraction_model = settings.extraction_model
-        self.evaluation_model = settings.evaluation_model
+        self.extraction_model = settings.gemini_extraction_model
+        self.evaluation_model = settings.gemini_evaluation_model
 
     @retry(
         stop=stop_after_attempt(6), 

@@ -4,3 +4,4 @@ openai>=1.0.0
 PyPDF2>=3.0.0
 google-genai>=0.1.0
 tenacity>=8.0.0
+ollama>=0.2.0
