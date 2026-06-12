@@ -33,6 +33,7 @@ def run_prompt_gradient_descent(agent: AIAgent, loader: DataLoaderService, enabl
     current_prompt = agent.generate_initial_prompt()
     best_score = float('inf')  # In error score, lower is better. Initializing with infinity.
     best_prompt = current_prompt
+    consecutive_failed_iterations = 0
 
     print(f"\n[Iteration 0] Starting Prompt: {current_prompt}")
     
@@ -121,11 +122,20 @@ def run_prompt_gradient_descent(agent: AIAgent, loader: DataLoaderService, enabl
             print(f"Error saving history: {e}")
 
         if average_error_score < best_score:
+            print(f"🟢 Prompt improved! Score dropped from {best_score:.4f} to {average_error_score:.4f}")
             best_score = average_error_score
             best_prompt = current_prompt
+            consecutive_failed_iterations = 0
+        else:
+            print(f"🔴 Prompt degraded or did not improve. Score: {average_error_score:.4f} (Best: {best_score:.4f})")
+            consecutive_failed_iterations += 1
             
         if average_error_score <= settings.optimization_threshold:
             print(f"\n✅ Threshold reached! Optimal prompt found in {i} iterations.")
+            break
+
+        if consecutive_failed_iterations >= settings.max_consecutive_failed_iterations:
+            print(f"\n🛑 Reached maximum consecutive failed iterations ({settings.max_consecutive_failed_iterations}). Stopping early.")
             break
             
         if i == settings.max_iterations:
@@ -133,15 +143,28 @@ def run_prompt_gradient_descent(agent: AIAgent, loader: DataLoaderService, enabl
             break
             
         # Step 4: Aggregate and Optimize (End of Epoch)
-        print("Optimizing prompt based on aggregated feedback from all batches...")
-        combined_feedback = "\n".join(epoch_feedbacks) if epoch_feedbacks else "General refinement needed."
-        
-        aggregated_evaluation = EvaluationResult(
-            error_score=average_error_score,
-            feedback=combined_feedback
-        )
-        
-        current_prompt = agent.optimize_prompt(current_prompt, aggregated_evaluation, unload_model=True)
+        if consecutive_failed_iterations == 0:
+            print("Optimizing prompt based on current success...")
+            combined_feedback = "\n".join(epoch_feedbacks) if epoch_feedbacks else "General refinement needed."
+            aggregated_evaluation = EvaluationResult(
+                error_score=average_error_score,
+                feedback=combined_feedback
+            )
+            current_prompt = agent.optimize_prompt(current_prompt, aggregated_evaluation, unload_model=True)
+        else:
+            print("Rejecting current prompt and attempting alternative optimization from the BEST prompt...")
+            rejection_notice = (
+                f"ATTENTION: We attempted a new prompt but it resulted in a WORSE error score ({average_error_score:.4f}). "
+                f"The rejected prompt was:\n'''\n{current_prompt}\n'''\n\n"
+                f"The errors caused by that rejected prompt were:\n" + "\n".join(epoch_feedbacks) +
+                f"\n\nPlease improve the CURRENT BEST PROMPT differently, avoiding the mistakes of the rejected prompt."
+            )
+            aggregated_evaluation = EvaluationResult(
+                error_score=best_score,
+                feedback=rejection_notice
+            )
+            current_prompt = agent.optimize_prompt(best_prompt, aggregated_evaluation, unload_model=True)
+            
         log(f"New Prompt: {current_prompt}")
         
     return best_prompt + f"\n\nFinal error score achieved: {best_score:.4f}"

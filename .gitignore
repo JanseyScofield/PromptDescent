@@ -5,3 +5,8 @@ __pycache__/
 *$py.class
 /data/documents
 data/prompt_history.json
+aplicativo.log
+prompt_descent.log
+RELATORIO_OTIMIZACAO.md
+ground_truth.json
+data.zip

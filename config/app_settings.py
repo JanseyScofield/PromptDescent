@@ -11,6 +11,7 @@ class AppSettings(BaseSettings):
     ollama_host: str = "http://localhost:11434"
     optimization_threshold: float = 0.05
     max_iterations: int = 5
+    max_consecutive_failed_iterations: int = 5
     
     # New settings for batch processing and ID-based matching
     validation_json_path: str = "data/ground_truth.json"
